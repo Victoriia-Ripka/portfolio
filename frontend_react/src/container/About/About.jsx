@@ -6,12 +6,12 @@ import { images } from "../../constants";
 const abouts = [
   {
     title: "Frontend dev",
-    description: "I am good React developer",
+    description: "I am keen on React and JS. Moreover, TypeScript and Redux are my good friends",
     imgURL: images.about01,
   },
   {
     title: "Backend dev",
-    description: "I am good Node.js developer",
+    description: "I am good at Node.js and Express. Also MongoDB and MySQL are in my tech stack",
     imgURL: images.about04,
   },
   {
