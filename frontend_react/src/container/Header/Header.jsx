@@ -14,7 +14,7 @@ const scaleVariants = {
   },
 };
 
-const circles = [images.flutter, images.redux, images.sass];
+const circles = [images.javascript, images.node, images.redux];
 
 const Header = () => (
   <div className="app__header app__flex">
