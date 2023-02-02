@@ -1,17 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+//  { useState, useEffect }
 import { motion } from "framer-motion";
 import "./About.scss";
 import { images } from "../../constants";
+import { AppWrapper } from "../../wrapper";
 
 const abouts = [
   {
     title: "Frontend dev",
-    description: "I am keen on React and JS. Moreover, TypeScript and Redux are my good friends",
+    description:
+      "I am keen on React and JS. Moreover, TypeScript and Redux are my good friends",
     imgURL: images.about01,
   },
   {
     title: "Backend dev",
-    description: "I am good at Node.js and Express. Also MongoDB and MySQL are in my tech stack",
+    description:
+      "I am good at Node.js and Express. Also MongoDB and MySQL are in my tech stack",
     imgURL: images.about04,
   },
   {
@@ -54,4 +58,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AppWrapper(About, "about");

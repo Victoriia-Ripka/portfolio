@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
+import { AppWrapper } from "../../wrapper";
 import "./Header.scss";
 
 const scaleVariants = {
@@ -47,7 +48,7 @@ const Header = () => (
       <img src={images.profile} alt="profile_bg" />
       <motion.img
         whileInView={{ scale: [0, 1] }}
-        transition={{ duration: 1, ease: 'easeInOut' }}
+        transition={{ duration: 1, ease: "easeInOut" }}
         src={images.circle}
         alt="profile_circle"
         className="overlay_circle"
@@ -66,6 +67,6 @@ const Header = () => (
       ))}
     </motion.div>
   </div>
-)
+);
 
-export default Header;
+export default AppWrapper(Header, "home");
